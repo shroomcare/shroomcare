@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./lib/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+	
+  	<script src="https://kit.fontawesome.com/3636ab5b2e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>ShroomCare</title>
+</head>
+<body style="background-color: #E9F7EF">
+    <!-- NavBar -->
+    <nav id="navmenu" class="navbar navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="#home">
+            <img src="./Images/logo/icon.png" width="30" height="30" class="d-inline-block align-top"  loading="lazy">
+            <span>ShroomCare</span></br>
+        </a>
+        <button id="nav-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="nav-toggle-icon" class="fas fa-ellipsis-v"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="navmenu-links" class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Project Scope
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#project-scope">Literature Survey</a>
+                <a class="dropdown-item" href="#research_gap">Research Gap</a>
+                <a class="dropdown-item" href="#research_problem">Research Problem & Solution</a>
+                <a class="dropdown-item" href="#research_objectives">Research Objectives</a>
+                <a class="dropdown-item" href="#methodology">Methodology</a>
+                <a class="dropdown-item" href="#tech_used">Technologies</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#milestones">Milestones</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Downloads
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#downloads">Documents</a>
+                  <a class="dropdown-item" href="#presentations">Presentations</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Home -->
+      <section id="home">
+        <div class="container">
+            <div class="hero-cta">
+                <h1>IoT based Plant Growth And Health Monitoring System</h1>
+                <a class="btn btn-outline-light" type="button" href="#project-scope"><span class="btn-text">Learn More</span><span class="fas fa-chevron-right btn-icon"></span></a>
+            </div>
+        </div>
+        <div class="hero-cover">
+            <!-- ^<img class="spotlight-image" src="./Images/other/skeleton.png"/> -->
+            <img class="hero-image" src="./Images/other/background.png"/>
+        </div>
+      </section>
+      <!-- project-scope -->
+      <section id="project-scope" class="main-sections" style="background-color:#FDFEFE">
+        <div class="container">
+            <h5 class="section-headings">Project Scope</h5>
+            <!-- Literature Survey -->
+            <div id="literature" class="sub-section">
+                <h2>Literature Survey</h2>
+                <div class="row">
+                  <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5">
+                    <div class="section-left">
+                      <div class="section-info-div">
+                        <div class="row">
+                          <div class="col-sm-5"><img src="./Images/lit/mushroom.jpg" width="60%"/></div>
+                          <div class="col-sm-7 text-col">Sustainable Agriculture at its Best: Oyster Mushroom Farming Unveiled<span style="color: grey; font-size: 12px;"></span style="color: grey; font-size: 12px;"></div>
+                        </div>
+                      </div>
+                      <div class="section-figure " >
+                        <img style="align-items:center" src="./Images/lit/stat.png" width="80%"/>
+                        <p>Figure 1. Climatic requirements/ Areas suitable for cultivation[1]</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="project-scope-right" class="col-md-6 col-sm-12 pt-lg-5 justify-text">
+                      <p>
+                          Traditional methods of monitoring mushroom
+                          growth, disease detection, and quality assurance often rely on
+                          subjective human assessments, leading to inefficiencies and
+                          inconsistencies these are the main research gaps. This research
+                          aims to address these challenges by developing an innovative
+                          IoT-based monitoring system that leverages robotic camera
+                          imagery, image processing techniques, IoT device and machine
+                          learning algorithms. Solution we used in the proposed system
+                          focuses on four main sub-objectives by identifying the optimal
+                          harvest time based on the size, morphology, and colour of
+                          mushrooms, Detecting diseases at an early stage and
+                          recommending appropriate treatments, Implementing quality
+                          standards assurance software to enhance product value,
+                          Integrating multiple environmental sensors with machine
+                          learning algorithms for real-time optimization of crop growth.
+                          Impact/Success of the proposed system has the potential to
+                          revolutionize mushroom cultivation practices by improving
+                          efficiency, productivity, and profitability. The system can help
+                          farmers to reduce crop losses, enhance product quality, and
+                          optimize crop growth. Overall, the proposed IoT-based
+                          mushroom cultivation monitoring system offers a promising
+                          solution for addressing key challenges in the mushroom
+                          cultivation industry. By leveraging advanced technologies such
+                          as robotics, image processing, and machine learning, the system
+                          can help farmers to make informed decisions and improve their
+                          bottom line.
+                      </p>
+				    
+                  </div>
+                </div>
+            </div>
+            <!-- Research Gap -->
+            <div id="research_gap" class="sub-section" >
+              <h2>Research Gap</h2>
+              <p>Following areas are the research gaps found in most of the recent researches.</p>
+              <div class="row mt-5 research-gap">
+			<div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="fa-container text-center">
+                        <i class="fa fa-book fa-3x " aria-hidden="true" style="color: green; "></i>
+                    </div>
+                    <div class="text-center" style="padding-top: 20px;">
+                        <h5>Identification & classification</h5>
+                    </div>
+                    <div>
+                        <p style="text-align: justify;"> While the research emphasizes the use of image processing and machine learning for identifying optimal harvest periods and prevalent diseases, there may be a need for further exploration into more diverse and complex mushroom varieties. The study primarily focuses on common diseases found in Sri Lanka, and extending this research to encompass a broader range of mushroom species could enhance its applicability on a global scale.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fa-container text-center">
+                        <i class="fa-solid fa-bar-chart fa-3x" aria-hidden="true" style="color: green;"></i>
+                    </div>
+                    <div class="text-center" style="padding-top: 20px;">
+                        <h5>Severity assessment</h5>
+                    </div>
+                    <div>
+                        <p style="text-align: justify;">
+                            The article discusses early-stage detection of diseases, but there is a potential research gap in quantifying and assessing the severity of identified diseases. Developing a robust severity assessment model could provide farmers with a more nuanced understanding of the potential impact of diseases on crop yield and quality. This would enable them to prioritize and tailor remedies based on the severity of the identified issues.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fa-container text-center">
+                        <i class="fa-solid fa-share-from-square fa-3x" aria-hidden="true" style="color: green;"></i>
+                    </div>
+                    <div class="text-center" style="padding-top: 20px;">
+                        <h5>Information sharing</h5>
+                    </div>
+                    <div>
+                        <p style="text-align: justify;">
+                            The research touches upon the development of user-friendly mobile interfaces for farmers, but the extent and efficiency of information sharing could be further investigated. Exploring ways to enhance real-time communication between the monitoring system and farmers, perhaps through mobile applications or other digital platforms, could bridge the gap between data analysis and actionable insights. Additionally, considering the socio-economic context of mushroom cultivation in different regions may influence the design and effectiveness of these information-sharing mechanisms.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+			</div> 
+              </div>
+          </div>
+            <!-- Research Problem -->
+            <div id="research_problem" class="sub-section">
+              <h2>Research Problem & Solution</h2>
+			   <div class="row">
+                <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5 justify-text">
+                 <h5><strong>Proposed Problem</strong></h5>
+				 </br>
+					<p></p>
+                    <p style="text-align: justify;">The proposed research encounters challenges related to the scalability and adaptability of the IoT-oriented monitoring system for mushroom cultivation. Specifically, there are concerns regarding the system's scalability across diverse mushroom varieties globally, as the research predominantly focuses on common diseases in Sri Lanka. Additionally, the adaptation of the system to various local contexts poses a significant hurdle, considering the distinct agricultural practices, environmental factors, and socio-economic conditions in different regions. These challenges highlight the need to develop a system that can effectively address diseases across a broader spectrum of mushroom species and seamlessly integrate into varied global agricultural landscapes.</p>
+				</br>
+				</div>
+        <div id="project-scope-right" class="col-md-6 col-sm-12 pt-lg-5">
+          <div class="section-left">
+            <div class="section-figure">
+              <img style="align-items:right" src="./Images/lit/problems.jpg" width="80%"/>
+            </div>
+          </div>
+        </div>
+				
+			     <div>
+				 <h5><strong>Proposed Solution</strong></h5>
+				 </br>
+                 <p style="text-align: justify;"> To mitigate scalability concerns, the research can delve into enhancing machine learning models by training them on a more extensive dataset that includes a diverse range of mushroom species. Advanced algorithms, such as transfer learning, could be employed to improve the system's capability to recognize and respond to diseases universally. Simultaneously, a focus on customization and localization within the IoT monitoring system is vital. This involves collaborating with local agricultural experts to tailor disease detection algorithms to prevalent diseases in specific regions, accommodating variations in climate, and considering cultural practices in mushroom cultivation. Implementing customizable features in the user interface would empower farmers to adapt the system to their specific needs, ensuring a more inclusive and adaptable solution. Additionally, fostering community engagement through surveys, workshops, and continuous feedback sessions with farmers from different regions would provide valuable insights, guiding the refinement of the system to align with the practical realities of mushroom cultivation in diverse contexts.	</p>
+                </div>
+          </div>
+            <!-- Research Objectives -->
+		   <div id="research_objectives" class="sub-section">
+        <div class="container">
+          <h2 class="pb-5 pt-5 text-center mb-5 display-5">Research Objectives</h2>
+          <!-- First Content Section-->
+          <div class="row align-items-center connecting-lines d-flex">
+            <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold"><i class="fa-solid fa-hand-point-right fa-beat fa-xl"></i></div>
+            </div>
+            <div class="col-6">
+                <h4>Precision Mushroom Harvesting</h4>
+              <p style="text-align: justify;">Developed an IoT based monitoring system (using a robot camera) to identify when to harvest mushroom using image processing and machine learning techniques by considering the shape, size, morphology and the color of mushrooms.</p>
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr/>
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!-- Second Content Section-->
+          <div class="row align-items-center justify-content-end connecting-lines d-flex">
+            <div class="col-6 text-right">
+                <h4>Disease Detection and Recommendations for Mushroom</h4>
+                <p style="text-align: justify;">Developed an IoT-based monitoring system for disease detection and recommendation of mushrooms in Sri Lanka could be to provide farmers with timely and accurate information about the health of their mushrooms. This objective can be achieved by using the IoT-based monitoring system(using a robo camera) to detect diseases at an early stage and recommend appropriate treatment options to farmers.</p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold"><i class="fa-solid fa-hand-point-left fa-beat fa-xl"></i></div>
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner right-bottom"></div>
+            </div>
+            <div class="col-8">
+              <hr/>
+            </div>
+            <div class="col-2">
+              <div class="corner top-left"></div>
+            </div>
+          </div>
+          <!-- Third Content Section -->
+          <div class="row align-items-center connecting-lines d-flex">
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold"> <i class="fa-solid fa-hand-point-right fa-beat fa-xl"></i></div>
+            </div>
+            <div class="col-6">
+                <h4> Environmental Optimization for Crop Growth</h4>
+              <p style="text-align: justify;">Developed an IoT device to integrate multiple environmental sensors, uses machine learning algorithms to analyze sensor data, continuously monitors and manages environmental factors in real-time systems to optimize crop growth.
+              </p>
+            </div>
+          </div>
+		   <!-- Path Line -->
+
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr/>
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!-- Second Content Section-->
+          <div class="row align-items-center justify-content-end connecting-lines d-flex">
+            <div class="col-6 text-right">
+                <h4>Revolutionizing Mushroom Quality Assurance</h4>
+              <p style="text-align: justify;">Developed a Quality standards assuring software using image processing and pre-trained models to increase the product value on the local market and international as well.</p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold"><i class="fa-solid fa-hand-point-left fa-beat fa-xl"></i></div>
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner right-bottom"></div>
+            </div>
+            <div class="col-8">
+              <hr/>
+            </div>
+            <div class="col-2">
+              <div class="corner top-left"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+            <!-- Methodology -->
+            <div id="methodology" class="sub-section">
+              <h2>Methodology</h2>
+              <div class="row">
+                <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5">
+                  <div class="section-left">
+                    <div class="section-figure">
+                      <img src="./Images/other/architecture.jpg" width="100%"/>
+                      <p>Figure 2. High Level Architecture of the system.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="project-scope-right" class="col-md-6 col-sm-12 pt-lg-5 justify-text">
+                    <p>The research methodology was enriched through a hands-on exploration at 'Hansi Mushroom,' providing crucial insights into the intricacies of mushroom cultivation. This on-site experience played a pivotal role in shaping the innovative IoT-driven monitoring system. The architecture seamlessly integrated a robotic camera, image processing techniques, and advanced machine learning algorithms, utilizing hardware components such as 'Raspberry Pi Camera V3' and 'Raspberry Pi Camera Model 4.' The objectives spanned disease detection, environmental parameter tracking, harvest time prediction, and quality assurance, with a focus on the American Oyster Mushroom.</p>
+                 
+                    <p> For disease detection, Convolutional Neural Networks (CNNs) and image processing were harnessed, yielding a dataset of 500 images to identify prevalent diseases and damaging insects. The environmental tracking module incorporated an array of sensors monitored by the Arduino UNO WIFI micro-controller, employing the Long Short-Term Memory (LSTM) algorithm for machine learning-based recommendations. Harvest time prediction utilized K-means clustering, Support Vector Machines (SVM), and CNNs, with user-friendly interfaces for farmer input. Quality assurance relied on TensorFlow-powered models, achieving a remarkable 98% enhancement. Results demonstrated high accuracies, affirming the potential of the integrated methodologies in revolutionizing disease detection, environmental surveillance, harvest timing, and product quality assurance in mushroom cultivation.</p>
+				  </div>
+              </div>
+          </div>
+            <!-- Technologies Used -->
+            <div id="tech_used" class="sub-section">
+              <h2>Technologies Used</h2>
+              <div class="row technology mt-5">
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/python.png" alt="Python">
+                    <p class="mt-4">Python</p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/react.png" alt="React">
+                    <p class="mt-4">React</p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/tensorflow.png" alt="Python">
+                    <p class="mt-4">Tensorflow</p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/blync.png" alt="Blync">
+                    <p class="mt-4">Blync</p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/flutter.png" alt="Flutter">
+                    <p class="mt-20">Flutter</p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/firebase.png" alt="Firebase">
+                    <p class="mt-4">Firebase</p>
+                  </div>
+                </div>
+				<div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/arduino.png" alt="Arduino">
+                    <p class="mt-4">Arduino</p>
+                  </div>
+                </div>
+				<div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/pi.png" alt="Resberry pi">
+                    <p class="mt-4">Resberry pi</p>
+                  </div>
+                </div>
+				<div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/doker.png" alt="Doker">
+                    <p class="mt-4">Doker</p>
+                  </div>
+                </div>
+				<div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/colab.png" alt="Google Colab">
+                    <p class="mt-4">Google Colab</p>
+                  </div>
+                </div>
+				<div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/jupiter.png" alt="Jupiter Notebook">
+                    <p class="mt-4">Jupiter Notebook</p>
+                  </div>
+                </div>
+				<div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/jwt.png" alt="Jwt">
+                    <p class="mt-4">Jwt</p>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </section>
+      <!-- Milestones -->
+      <section id="milestones" class="main-sections" >
+        <div class="container">
+            <h5 class="section-headings">Milestones</h5>
+            <div class="sub-section">
+                <h2>Timeline in Brief</h2>
+                <div class="milestones">
+                  <ul class="timeline">
+                    <!-- Project Proposal -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">March 2023</p>
+                        <h3>Project Proposal</h3>
+                        <p>A Project Proposal is presented to potential sponsors or clients to receive funding or get your project approved.</p>
+                        <p><strong>Marks Allocated : </strong>12</p>
+                        <div class="progress">
+                          <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 12%"></div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Progress Presentation I -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">June 2023</p>
+                        <h3>Progress Review I</h3>
+                        <p>Progress Presentation I reviews the 50% completetion status of the project. This reveals any gaps or inconsistencies in the design/requirements.</p>
+                        <p><strong>Marks Allocated : </strong>15</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 12%"></div>
+                          <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 15%"></div>  
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Research Paper -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">July 2023</p>
+                        <h3>Research Paper</h3>
+                        <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred in making new knowledge</p>
+                        <p><strong>Marks Allocated : </strong>10</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 27%"></div>
+                          <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div></div>
+                      </div>
+                    </li>
+                    <!-- Progress Presentation II -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">September 2023</p>
+                        <h3>Progress Review II</h3>
+                        <p>Progress Presentation II reviews the 90% completetion status demonstration of the project. Along with a Poster presesntation which describes the project as a whole.</p>
+                        <p><strong>Marks Allocated : </strong>18</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 37%"></div>
+                          <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 18%"></div></div>
+                      </div>
+                    </li>
+                    <!-- Website -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">October 2023</p>
+                        <h3>Website Assessment</h3>
+                        <p>The Website helps to promote our research project and reveals all details related to the project.</p>
+                        <p><strong>Marks Allocated : </strong>2</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
+                          <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 2%"></div>  </div>
+                      </div>
+                    </li>
+                    <!-- Logbook -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">November 2023</p>
+                        <h3>Logbook</h3>
+                        <p>Status of the project is validated through the Logbook. This also includes, Status documents 1 & 2.</p>
+                        <p><strong>Marks Allocated : </strong>4</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 57%"></div>
+                          <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 4%"></div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Final Report -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">November 2023</p>
+                        <h3>Final Report</h3>
+                        <p>Final Report evalutes the completed project done throughout the year. Marks mentioned below includes marks for Individual & group reports and also Final report.</p>
+                        <p><strong>Marks Allocated : </strong>19</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 61%"></div>
+                          <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 19%"></div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Viva -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">November  2023</p>
+                        <h3>Final Presentation & Viva</h3>
+                        <p>Viva is held individually to assess each members contribution to the project.</p>
+                        <p><strong>Marks Allocated : </strong>20</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                          <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Downloads -->
+      <section id="downloads" class="main-sections" >
+        <div class="container">
+            <h5 class="section-headings">Downloads</h5>
+            <!-- Documents -->
+            <div class="sub-section">
+                <h2>Documents</h2>
+                <p>Please find all documents related to this project below.</p>
+                <div class="row mt-sm-5 downloads-container">
+				 <!-- Topic Assessment -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-file-pdf fa-bounce"></i> Topic Assessment</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2023/02/25</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="
+                          https://drive.google.com/file/d/1WHxs_z-6LKiWU21OS8ir68A8WOJ4tafY/view?usp=sharing" target="_blank">Download</a></li>
+                        <!-- <li class="list-group-item">Individual<a href="">Download</a></li> -->
+                      </ul>
+
+                    </div>
+                  </div>
+                  <!-- Project Proposal -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-file-pdf fa-bounce"></i> Project Proposal</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2023/03/22</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Individual<a href="https://drive.google.com/drive/folders/1LEFdRbgboh2bHeJhzxZZYoFfmheFr4s0?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <!-- Status Documents -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-file-pdf fa-bounce"></i> Status Documents I</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2023/07/05</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <!-- <li class="list-group-item">Group<a href="">Download</a></li> -->
+                        <li class="list-group-item">Individual<a href="https://drive.google.com/file/d/182vaCHtAekqYLylW9K8zOBpiKADFqc-A/view?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <!-- Status Documents -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-file-pdf fa-bounce"></i> Status Documents II</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2023/09/15</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <!-- <li class="list-group-item">Group<a href="">Download</a></li> -->
+                        <li class="list-group-item">Individual<a href="https://drive.google.com/drive/folders/1cZ964CWr5jEVT1NI7rmBEL-MAlUrRXG3?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <!-- Research -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-file-pdf fa-bounce"></i> Research Paper</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2023/08/6</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="https://drive.google.com/file/d/1WVksG7ucdiZkGXB7EyUQBUvfqe6J9sN8/view?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <!-- Final Report -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-file-pdf fa-bounce"></i> Final Report</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2023/9/10</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="https://drive.google.com/file/d/1ILSl_Zy9qpb-UnKx_H5D1W16Ic0EVScA/view?usp=sharing" target="_blank">Download</a></li>
+                        <li class="list-group-item">Individual<a href="https://drive.google.com/drive/folders/1MwVZx7rOH48EINyps6CX9nEuRV9sW9Ja?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+            <!-- Presentations -->
+            <div id="presentations" class="sub-section">
+                <h2>Presentations</h2>
+                <p>Please find all presentations related this project below.</p>
+                <div class="row mt-sm-5 downloads-container">
+                  <!-- Progress Presentation I -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-file-powerpoint fa-beat"></i></i> Progress Presentation I</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2023/07/08</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="https://docs.google.com/presentation/d/1EE-fGApDer5FjM408raMg1a6Lb1iBGy9/edit?usp=sharing&ouid=111329162457361676164&rtpof=true&sd=true" target="_blank">Download</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Progress Presentation II -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-file-powerpoint fa-beat"></i></i> Progress Presentation II</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2023/10/18</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="https://docs.google.com/presentation/d/16UIS62UA7jR10tlttAzxv7GMofNxrinb/edit?usp=sharing&ouid=111329162457361676164&rtpof=true&sd=true" target="_blank">Download</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Final Presentation -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-file-powerpoint fa-beat"></i></i> Final Presentation</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2023/09/10</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="https://docs.google.com/presentation/d/1_MjKa83bd4Y4zzsbsMgB0IrgeyhkJPhJ/edit?usp=sharing&ouid=111329162457361676164&rtpof=true&sd=true" target="_blank">Download</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- About Us -->
+      <section id="about" class="main-sections " style="background-color:#FDFEFE">
+        <div class="container">
+            <h5 class="section-headings">About Us</h5>
+            <div class="sub-section about-us-container ">
+                <h2>Meet Our Team !</h2>
+                <div class="row  mt-sm-5 ">
+                  <!-- Supervisor -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card about-us-card">
+                      <img src="./Images/dp/supervisor.jpg" class="about-us-image supervisor" alt="Dr. Janaka Wijekoon" height="20%"/>
+                      <div class="card-body">
+                        <h5 class="card-title">Mrs. Suranjini Silva</h5>
+						</br>
+                        <span class="badge badge-secondary">Supervisor</span>
+                        <div class="text-group">
+                          <p>Sri Lanka Institute of Information Technology</p>
+                        </div>
+                        <div class="text-group">
+                          <p><strong>Department</strong></p>
+                          <p>Computer System Engineering</p>
+                        </div>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <a class="card-text mr-4" style="cursor: pointer;" href="https://scholar.google.com/citations?hl=en&user=iE82S4EAAAAJ"><i class="fab fa-google mr-2"></i>G-Scholar</a>
+                          <a class="card-text" style="cursor: pointer;" href="mailto:suranjini.s@sliit.lk"><i class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Co Supervisor -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card about-us-card">
+                      <img src="./Images/dp/cosupervisor.jpg" alt="Ms. Dilani Lunugalage" height="20%"/>
+                      <div class="card-body">
+                        <h5 class="card-title">Ms. Rangi Liyanage</h5>
+						</br>
+                        <span class="badge badge-secondary">Co-Supervisor</span>
+                        <div class="text-group">
+                          <p>Sri Lanka Institute of Information Technology</p>
+                        </div>
+                        <div class="text-group">
+                          <p><strong>Department</strong></p>
+                          <p>Computer System Engineering</p>
+                        </div>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <a class="card-text mr-4" style="cursor: pointer;" href="https://www.linkedin.com/in/dilani-lunugalage-84b78433"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                          <a class="card-text" style="cursor: pointer;" href="mailto:dilani.l@sliit.lk"><i class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+				  <!-- external Supervisor -->
+				  </div>
+				  <div class="row  mt-sm-5" style="justify-content: center">
+                  <!-- samitha -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card about-us-card">
+                      <img src="./Images/dp/pramudi.jpg" class="about-us-image " alt="Punsala S.M.P" height="20%"/>
+                        <div class="card-body">
+                        <h5 class="card-title">Punsala S.M.P</h5>
+						</br>
+                        <span class="badge badge-secondary">Group Leader</span>
+                        <div class="text-group">
+						<p><strong>Undergraduate</strong></p>
+                          <p>Sri Lanka Institute of Information Technology</p>
+                        </div>
+                        <div class="text-group">
+						<p><strong>Work</strong></p>
+                          <p>Former Associate Software Engineer at Ceyleon Solutions</p>
+                        </div>
+                        <div class="text-group">
+                        <p><strong>Department</strong></p>
+                          <p>Software Engineering</p>
+                        </div>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+						<a class="card-text mr-4" style="cursor: pointer;" href="https://www.linkedin.com/in/pamudi-punsala-865138231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                          <a class="card-text" style="cursor: pointer;" href="mailto:pamudipunsala@gmail.com"><i class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Tinali -->
+                   <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card about-us-card">
+                      <img src="./Images/dp/hasi.jpg" class="about-us-image" alt="Benthara B.W.H.T" height="20%"/>
+                        <div class="card-body">
+                        <h5 class="card-title">Benthara B.W.H.T</h5>
+						</br>
+                        <span class="badge badge-secondary">Group Member</span>
+                        <div class="text-group">
+						<p><strong>Undergraduate</strong></p>
+                          <p>Sri Lanka Institute of Information Technology</p>
+                        </div>
+                        <div class="text-group">
+						<p><strong>Work</strong></p>
+                          <p>Associate Software Engineer at i-Context (Pvt) Ltd</p>
+                        </div>
+                        <div class="text-group">
+                        <p><strong>Department</strong></p>
+                          <p>Software Engineering</p>
+                        </div>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+						<a class="card-text mr-4" style="cursor: pointer;" href="https://www.linkedin.com/in/hasini-thisari-928b08215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                          <a class="card-text" style="cursor: pointer;" href="mailto:hasinithisari@gmail.com"><i class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Gnanod -->
+                          <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card about-us-card">
+                      <img src="./Images/dp/demo.jpg" class="about-us-image" alt="Chathura W.B.D." height="20%"/>
+                        <div class="card-body">
+                        <h5 class="card-title">Chathura W.B.D.</h5>
+						</br>
+                        <span class="badge badge-secondary">Group Member</span>
+                        <div class="text-group">
+						<p><strong>Undergraduate</strong></p>
+                          <p>Sri Lanka Institute of Information Technology</p>
+                        </div>
+                        <div class="text-group">
+                        <p><strong>Department</strong></p>
+                          <p>Interactive Media</p>
+                        </div>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+						<a class="card-text mr-4" style="cursor: pointer;" href="https://www.linkedin.com/in/daham-chathura-3341b5232?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                          <a class="card-text" style="cursor: pointer;" href="mailto:dahamchathura59@gmail.com"><i class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Divyani -->
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card about-us-card">
+                      <img src="./Images/dp/vihanga.jpg" class="about-us-image" alt="Ferdinando D.V.P" height="20%"/>
+                        <div class="card-body">
+                        <h5 class="card-title">Ferdinando D.V.P</h5>
+						</br>
+                        <span class="badge badge-secondary">Group Member</span>
+                        <div class="text-group">
+						<p><strong>Undergraduate</strong></p>
+                          <p>Sri Lanka Institute of Information Technology</p>
+                        </div>
+                        <div class="text-group">
+                        <p><strong>Department</strong></p>
+                          <p>Software Engineering</p>
+                        </div>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+						<a class="card-text mr-4" style="cursor: pointer;" href="https://www.linkedin.com/in/vihangapramudith/"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                          <a class="card-text" style="cursor: pointer;" href="mailto:vihangapramudith0@gmail.com"><i class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+				  </div>
+            </div>
+        </div>
+      </section>
+
+	    <!-- Achievements -->
+	   <!-- <section id="achievements" class="main-sections" >
+        <div class="container">
+          <h2 class="pb-5 pt-5 text-center  display-5">Achievements</h2>
+                  <div class="section-center">
+                    <div class="section-figure text-center">
+                      <img src="./Images/ach/award.png" width="80%"/>
+                    </div>
+                  </div>
+				  <div>
+				 </br>
+				 <p style="text-align: justify;"> We were selected as finalists to represent Sri Lanka Institute of Information Technology at the National Best Quality ICT Awards 2023 and E-Swabhumani 2023. Furthermore, we have been selected as national nominees to represent Sri Lanka in the WSA (World Summit Award) and WSA Youth in 2023.</P>
+                </div>
+        </div>
+      </section> -->
+	      <!-- Promo Banner -->
+		  <section id="banner" class="main-sections">
+        <div class="promo-banner">
+                 <h2 class="promo-banner-title">Use Our Service to Make Your Work Easy</h2>
+
+               <div class="section-center">
+                    <div class="section-figure">
+                    </div>
+                  </div>
+        </div>
+		</section>
+
+      <!-- Contact Us -->
+      <section id="contact" class="main-sections" style="background-color:#FDFEFE">
+        <div class="container">
+            <h5 class="section-headings">Contact Us</h5>
+            <div class="sub-section">
+                <h2>Get in Touch</h2>
+                <div class="row  mt-sm-5">
+                  <div class="col-md-6 col-sm-12 contact-form">
+                    <form action="MAILTO:researchcoco@gmail.com" method="POST" enctype="text/plain">
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="John Doe">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message or Query</label>
+                        <textarea class="form-control" id="message" rows="5"></textarea>
+                      </div>
+                      <button type="submit" class="btn btncolorgradient	">Submit</button>
+                    </form>
+                  </div>
+                  <div class="col-md-6 col-sm-12 contact-details">
+                    <div>
+                      <p><strong>Contact Details</strong></p>
+                      <p>For further queries please reach us at <a href="mailto: shroomcare@gmail.com">shroomcare@gmail.com</a></p>
+                      <p>Hope this project helped you in some manner. Thank you!</p>
+                      <p>-ShroomCare	</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Scripts -->
+    <script src="./lib/jquery/jquery-3.5.1.slim.min.js"></script>
+    <script src="./lib/fontawesome/js/all.min.js"></script>
+    <script src="./lib/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
